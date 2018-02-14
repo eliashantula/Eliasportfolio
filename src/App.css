@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100%;
 
 }
 
@@ -16,7 +17,7 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .App-intro {
@@ -33,6 +34,24 @@
   height: 100%;
 }
 
+.desc {
+font-family: 'Lato', sans-serif;
+font-size: 20px;
+
+}
+
+.desc1 {
+font-family: 'Lato', sans-serif;
+font-size: 15px;
+
+}
+
+.desc3 {
+font-family: 'Lato', sans-serif;
+font-size: 25px;
+
+}
+
 .jumbotron img {
   display: block;
   margin: 0 auto;
@@ -41,9 +60,10 @@
 
 .jumbotron {
   background-color:#181818 !important;
+    margin-top: 30px;
 }
-Section {
-  margin-top: 5%;
+section {
+
   color:#d6dbdb
 }
 
@@ -53,6 +73,7 @@ Section {
   float: none;
   vertical-align: top;
   margin-right: 50px;
+
 }
 
 li{
@@ -60,22 +81,33 @@ li{
 }
 
 img {
-  height: 70%;
-  width: 70%;
+  margin-top: 50px;
+  height: 75%;
+  width: 75%;
+  box-shadow: 3px 7px black;
 
 }
 
-.col-md-4 {
-  border: 2px solid white;
-  border-radius: 10px;
+.mPlayer {
+
+height: 300px;
+
+}
+
+.col-md-6 {
+    border-radius: 10px;
   background-color: #181818;
+  
 }
 
 
 section {
   margin-top: 10px;
-margin-bottom: 20px;
+margin-bottom: 30px;
 background-color: #181818;
+
+    
+
 
 }
 

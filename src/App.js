@@ -6,6 +6,8 @@ import Navbar from './Nav';
 import Section from './Section';
 import Welcome from './Welcome';
 import Images from './Images'
+import Justice from './justice.png'
+import Code from './code.jpg'
 
 
 const sections = [
@@ -28,7 +30,7 @@ class App extends Component {
         <div className="container">
           <div className="jumbotron">
             <img
-              src={myimage}
+              src={Code} style={{height: "250px"}}
             />
           </div>
         </div>

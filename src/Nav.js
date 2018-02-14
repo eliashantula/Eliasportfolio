@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Scales from './scales.png'
 const NavbarItem = ({section, active}) => {
   let activeState = '';
 
@@ -16,13 +16,21 @@ const NavbarItem = ({section, active}) => {
 
 const Navbar = ({sections, colorStyle}) => {
   return (
+
     <nav role="navigation" className={`navbar ${colorStyle}`}>
       <div className="container-fluid">
+
         <div className="navbar-header">
+       
           <a className="navbar-brand" href="#">
-            Elias Hantula
+         
+              Elias Hantula - Software Developer - Attorney 
+               <img
+              src={Scales} style={{height: "50px", width: "50px", position: "relative", bottom: "85px", left: "500px"}} 
+            />
           </a>
         </div>
+         
         <ul className="nav navbar-nav navbar-inverse">
           <NavbarItem section={{title:'Home'}} active={true} />
           {sections.map(section => {
@@ -30,6 +38,7 @@ const Navbar = ({sections, colorStyle}) => {
           })}
         </ul>
       </div>
+
     </nav>
   );
 };
