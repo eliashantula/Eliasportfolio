@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Scales from './scales.png'
+import { Parallax, Background } from 'react-parallax'
 const NavbarItem = ({section, active}) => {
   let activeState = '';
 
@@ -17,7 +18,7 @@ const NavbarItem = ({section, active}) => {
 const Navbar = ({sections, colorStyle}) => {
   return (
 
-    <nav role="navigation" className={`navbar ${colorStyle}`}>
+    <nav role="navigation" className={`navbar ${colorStyle}`} style={{margin: "0"}}>
       <div className="container-fluid">
 
         <div className="navbar-header">
@@ -25,9 +26,7 @@ const Navbar = ({sections, colorStyle}) => {
           <a className="navbar-brand" href="#">
          
               Elias Hantula - Software Developer - Attorney 
-               <img
-              src={Scales} style={{height: "50px", width: "50px", position: "relative", bottom: "85px", left: "500px"}} 
-            />
+              
           </a>
         </div>
          
@@ -39,6 +38,15 @@ const Navbar = ({sections, colorStyle}) => {
         </ul>
       </div>
 
+      <Parallax
+      blur={2}
+      bgImage={require('./landscape.jpg')}
+     
+      strength={600}
+    >   
+      <div style={{ height: '300px' }} />
+  </Parallax>
+     
     </nav>
   );
 };

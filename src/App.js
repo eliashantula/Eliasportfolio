@@ -8,7 +8,7 @@ import Welcome from './Welcome';
 import Images from './Images'
 import Justice from './justice.png'
 import Code from './code.jpg'
-
+import { Parallax, Background } from 'react-parallax'
 
 const sections = [
   {
@@ -25,21 +25,44 @@ const sections = [
 class App extends Component {
   render() {
     return (
+    
       <div className="App">
+  
+   
         <Navbar sections={sections} colorStyle="navbar-inverse" />
-        <div className="container">
-          <div className="jumbotron">
-            <img
-              src={Code} style={{height: "250px"}}
-            />
-          </div>
-        </div>
+
+   
+      
         <div className="parts">
+       
         {sections.map(section => {
-          return <Section id={section.title} child={section.content}/>;
+          return <Section id={section.title} child={section.content}
+
+
+
+
+
+
+
+          />;
+
         })}
+   <Parallax
+      blur={3}
+      bgImage={require('./code.jpg')}
+     
+      strength={600}
+    >   
+      <div style={{ height: '500px' }} />
+  </Parallax>
         </div>
+ 
+    <div/>
+
+ 
+
       </div>
+ 
     );
   }
 }
