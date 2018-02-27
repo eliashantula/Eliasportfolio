@@ -9,6 +9,8 @@ import Images from './Images'
 import Justice from './justice.png'
 import Code from './code.jpg'
 import { Parallax, Background } from 'react-parallax'
+import Contact from './Contact'
+
 
 const sections = [
   {
@@ -18,6 +20,10 @@ const sections = [
   {
     title: 'Projects',
     content:<Images />
+  },
+  {
+    title: 'Contact',
+    content: <Contact />
   }
 ];
 
@@ -47,21 +53,22 @@ class App extends Component {
           />;
 
         })}
-   <Parallax
+  
+        </div>
+         <Parallax
       blur={3}
       bgImage={require('./code.jpg')}
      
       strength={600}
     >   
-      <div style={{ height: '500px' }} />
+      <div style={{ height: '400px' }} />
   </Parallax>
-        </div>
  
-    <div/>
+    </div>
 
  
 
-      </div>
+
  
     );
   }

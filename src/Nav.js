@@ -18,7 +18,7 @@ const NavbarItem = ({section, active}) => {
 const Navbar = ({sections, colorStyle}) => {
   return (
 
-    <nav role="navigation" className={`navbar ${colorStyle}`} style={{margin: "0"}}>
+    <nav role="navigation" className={`navbar ${colorStyle}`} style={{margin: "0", border: "1px"}}>
       <div className="container-fluid">
 
         <div className="navbar-header">
@@ -40,11 +40,11 @@ const Navbar = ({sections, colorStyle}) => {
 
       <Parallax
       blur={2}
-      bgImage={require('./landscape.jpg')}
+      bgImage={require('./code.jpg')}
      
       strength={600}
     >   
-      <div style={{ height: '300px' }} />
+      <div style={{ height: '400px' }} />
   </Parallax>
      
     </nav>

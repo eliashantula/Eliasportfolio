@@ -8,6 +8,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-mailto": "^0.4.0",
+    "react-parallax": "^1.6.1",
     "react-protected-mailto": "^1.0.3",
     "react-scripts": "1.0.17",
     "react-simple-parallax": "^0.2.6"

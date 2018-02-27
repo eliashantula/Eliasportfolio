@@ -11,50 +11,45 @@ return (
 
 
 <div>
-   <Parallax
-      blur={3}
-      bgImage={require('./code.jpg')}
-     
-      strength={600}
-    >   
-      <div style={{ height: '500px' }} />
-  </Parallax>
-<div className="container-fluid" style={{backgroundColor: "white"}}>
+
    
 
-<div className="row">
-   <h1 className="desc4" style={{color:"black"}}>Projects</h1>
+<div className="container-fluid" style ={{background: "-webkit-radial-gradient(center, ellipse cover, #383838 0%, #C3C8D6 91%, #C3C8D6 92%)", margin: "0px", border: "0px solid black", paddingTop: "50px", paddingBottom: "-10px"}}>
+   
+<h1 className="desc4" style={{color:"black", margin: "0px"}}>Projects</h1>
+<div className="row" style={{paddingBottom: "0", margin: "0px", paddingTop: "40px"}}>
+   
 <div className="col-md-6">
 
 <a href="https://appbackpack.herokuapp.com">
 <img src={backpack} /></a>
 
-<p className="desc1" style={{color:"black"}}>Backpack: Save all of your favorite articles, links and videos!</p>
+<p className="desc1" style={{color:"black"}}>Backpack: Web Application enabling user to store links in their private accounts either through<br/> the website or through a Chrome extension. The application utilizes React, Redux, passport authentication, and MongoDB. <br/>   </p>
 </div>
 <div className="col-md-6">
 <a href="https://shielded-shore-35212.herokuapp.com/"><img src={event} />
 </a>
-<p className="desc1" style={{color:"black"}}>Event Guider: Find local restaurants and events for today!</p>
+<p className="desc1" style={{color:"black"}}>Event Guider: Web Application to locate attractions by zip code taking place on the current day. <br/>The application utilizes data from Yelp's api and Eventbrite's api. A chat feature is implemented with websockets. </p>
 </div>
-<div className="col-md-6">
-<a href="https://quiet-cove-41555.herokuapp.com"><img src={ukraine} />
-</a>
-<p className="desc1" style={{color:"black"}}>Ukraine Travel Guide</p>
 
-</div>
 <div className="col-md-6 mPlayer">
 <a href="https://blooming-cliffs-48752.herokuapp.com">
 <img src={player} /></a>
 
 <p className="desc1" style={{color:"black"}}>Music Player</p>
 </div>
-
-
+<div className="col-md-6">
+<a href="https://quiet-cove-41555.herokuapp.com"><img src={ukraine}/>
+</a>
+<p className="desc1" style={{color:"black"}}>Ukraine Travel Guide</p>
 
 </div>
 </div>
 
 </div>
+
+</div>
+
 
 
 	)
