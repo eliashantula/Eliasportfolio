@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import myimage from './landscape.jpg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from './Nav';
+
+import Navbars from './Nav';
 import Section from './Section';
 import Welcome from './Welcome';
 import Images from './Images'
@@ -23,12 +23,12 @@ const sections = [
     content:<Images />
   },
   {
-    title: 'Contact',
-    content: <Contact />
+    title: 'Skills',
+    content: <Skills />
   },
 
-  {title: 'Skills',
-  content: <Skills />}
+  {title: 'Contact',
+  content: <Contact />}
 ];
 
 
@@ -38,16 +38,17 @@ class App extends Component {
     
       <div className="App">
   
-        <Navbar sections={sections}  />
+      
 
   <Parallax
-      blur={2}
-      bgImage={require('./code.jpg')}
+      blur={0}
+      bgImage={require('./back.jpg')}
      
-      strength={600}
+      strength={800}
     >   
-      <div style={{ height: '300px' }} />
+      <div style={{ height: '400px' }} />
   </Parallax>
+    <Navbars/>
         <div className="parts">
        
         {sections.map(section => {
@@ -65,12 +66,12 @@ class App extends Component {
   
         </div>
          <Parallax
-      blur={3}
+      blur={0}
       bgImage={require('./code.jpg')}
      
-      strength={500}
+      strength={800}
     >   
-      <div style={{ height: '300px' }} />
+      <div style={{ height: '700px' }} />
   </Parallax>
  
     </div>

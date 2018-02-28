@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0-alpha.6",
     "faker": "^4.1.0",
     "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-navbar": "^1.1.0",
     "react-dom": "^16.2.0",
     "react-mailto": "^0.4.0",
     "react-parallax": "^1.6.1",
     "react-protected-mailto": "^1.0.3",
     "react-scripts": "1.0.17",
-    "react-simple-parallax": "^0.2.6"
+    "react-simple-parallax": "^0.2.6",
+    "react-transition-group": "^2.2.1",
+    "reactstrap": "^4.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
