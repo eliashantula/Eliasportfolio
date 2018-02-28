@@ -18,7 +18,6 @@ const NavbarItem = ({section, active}) => {
 const Navbar = ({sections, colorStyle}) => {
   return (
 
-    <nav role="navigation" className={`navbar ${colorStyle} navig`} style={{margin: "0", border: "2px solid white", backgroundColor: "black"}}>
      
 
         <div className="navbar-header">
@@ -28,7 +27,7 @@ const Navbar = ({sections, colorStyle}) => {
               Elias Hantula
               
           </a>
-        </div>
+        
          
         <ul className="nav navbar-nav">
           <NavbarItem section={{title:''}} active={true} />
@@ -36,9 +35,9 @@ const Navbar = ({sections, colorStyle}) => {
             return <NavbarItem section={section} />;
           })}
         </ul>
-      
+      </div>
      
-    </nav>
+ 
   );
 };
 

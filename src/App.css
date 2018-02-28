@@ -81,38 +81,36 @@ font-size: 25px;
 
 section {
 
-  color:black
+  color:green
 }
 
-.nav {
-z-index: 9;
-position: fixed; 
-width: 100%;
-top: 0;
-float: none;
-vertical-align: top;
-color: black;
-display: inline-block;
-width: 100%;
-}
 
-.navbar-brand {
+
+
+
+.navbar-header {
+  top: 0;
      position: fixed;
      background-color: black;
      z-index: 9;
-     vertical-align: top;
+     vertical-align: center;
+     display: inline-block;
+     margin-right: 0px;
+  padding-top: 0px;
+  width: 100%;
+  display: inline-block;
 }
 
-.navbar-nav {
+nav {
   background-color: black;
-  display: inline-block;
+
  
    top: 0;
   float: none;
-  vertical-align: top;
+  vertical-align: center;
   margin-right: 0px;
   padding-top: 0px;
-  width: 100%;
+
 
 }
 
