@@ -7,9 +7,10 @@ import Section from './Section';
 import Welcome from './Welcome';
 import Images from './Images'
 import Justice from './justice.png'
-import Code from './code.jpg'
-import { Parallax, Background } from 'react-parallax'
-import Contact from './Contact'
+import Code from './code.jpg';
+import { Parallax, Background } from 'react-parallax';
+import Skills from './Skills';
+import Contact from './Contact';
 
 
 const sections = [
@@ -24,7 +25,10 @@ const sections = [
   {
     title: 'Contact',
     content: <Contact />
-  }
+  },
+
+  {title: 'Skills',
+  content: <Skills />}
 ];
 
 
@@ -34,11 +38,16 @@ class App extends Component {
     
       <div className="App">
   
-   
-        <Navbar sections={sections} colorStyle="navbar-inverse" />
+        <Navbar sections={sections}  />
 
-   
-      
+  <Parallax
+      blur={2}
+      bgImage={require('./code.jpg')}
+     
+      strength={600}
+    >   
+      <div style={{ height: '300px' }} />
+  </Parallax>
         <div className="parts">
        
         {sections.map(section => {
@@ -59,9 +68,9 @@ class App extends Component {
       blur={3}
       bgImage={require('./code.jpg')}
      
-      strength={600}
+      strength={500}
     >   
-      <div style={{ height: '400px' }} />
+      <div style={{ height: '300px' }} />
   </Parallax>
  
     </div>

@@ -81,16 +81,37 @@ font-size: 25px;
 
 section {
 
-  color:#d6dbdb
+  color:black
 }
 
+.navbar {
+z-index: 9;
+position: fixed; 
+width: 100%;
+top: 0;
+vertical-align: top;
+}
 
-.navbar .navbar-nav {
+.navbar-brand {
+
+ background-color: black;
+position: fixed; 
+width: 100%;
+top: 0;
+
+
+}
+
+.navbar-nav {
+  background-color: black;
   display: inline-block;
+   position: fixed; 
+   top: 0;
   float: none;
   vertical-align: top;
   margin-right: 0px;
-  padding: 0px;
+  padding-top: 0px;
+  width: 100%;
 
 }
 
@@ -100,10 +121,10 @@ li{
 
 img {
   margin-top: 0px;
-  padding: 0px;
+  padding-bottom: 0px;
   height: 75%;
   width: 75%;
-  box-shadow: 2px 4px black;
+  box-shadow: 3px 5px black;
 
 }
 
@@ -116,7 +137,7 @@ height: 575px;
 .col-md-6 {
 
 
-padding: 0px;
+padding: 15px;
 
   
 }
