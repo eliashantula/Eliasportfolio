@@ -18,8 +18,8 @@ const NavbarItem = ({section, active}) => {
 const Navbar = ({sections, colorStyle}) => {
   return (
 
-    <nav role="navigation" className={`navbar ${colorStyle}`} style={{margin: "0", border: "5px"}}>
-      <div className="container-fluid" style={{color: "black"}}>
+    <nav role="navigation" className={`navbar ${colorStyle} navig`} style={{margin: "0", border: "2px solid white", backgroundColor: "black"}}>
+     
 
         <div className="navbar-header">
        
@@ -36,7 +36,7 @@ const Navbar = ({sections, colorStyle}) => {
             return <NavbarItem section={section} />;
           })}
         </ul>
-      </div>
+      
      
     </nav>
   );

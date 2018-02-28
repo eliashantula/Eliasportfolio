@@ -84,28 +84,29 @@ section {
   color:black
 }
 
-.navbar {
+.nav {
 z-index: 9;
 position: fixed; 
 width: 100%;
 top: 0;
+float: none;
 vertical-align: top;
+color: black;
+display: inline-block;
+width: 100%;
 }
 
 .navbar-brand {
-
- background-color: black;
-position: fixed; 
-width: 100%;
-top: 0;
-
-
+     position: fixed;
+     background-color: black;
+     z-index: 9;
+     vertical-align: top;
 }
 
 .navbar-nav {
   background-color: black;
   display: inline-block;
-   position: fixed; 
+ 
    top: 0;
   float: none;
   vertical-align: top;
