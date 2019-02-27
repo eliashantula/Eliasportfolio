@@ -21,6 +21,7 @@
     "react-simple-parallax": "^0.2.6",
     "react-transition-group": "^2.2.1",
     "react-transitions": "^1.0.0",
+    "react-typing-animation": "^1.6.2",
     "reactstrap": "^5.0.0-beta.3"
   },
   "scripts": {
