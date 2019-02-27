@@ -12,9 +12,9 @@ const Welcome = (props) => {
   <CardImgOverlay>
   <CardTitle className="display-3 welcome" style={{color:"black", margin: "0px", paddingTop: "30px",paddingBottom: "30px"}}>Welcome</CardTitle>
 <div className="restrict">
-    <CardText className="my-1 fontTest"><Typing speed={90}>
+    <CardText className="my-1 fontTest"><Typing speed={60}>
    Thanks for coming by! I am an attorney turned full stack software developer with a passion for technology, learning,
-   the arts, and the law. My expertise includes working with entities ranging from mom and pop restaurants, craft breweries to celebrities. I am always seeking out projects which promote and stimulate creativity, knowledge and enhanced life experiences. 
+   the arts, and intellectual property. My expertise includes working with a wide ranging entities including mom and pop businesses, craft breweries and celebrities. I am always eager to work on projects which promote and stimulate creativity, knowledge and enhanced life experiences. 
   </Typing></CardText>
 </div>
 </CardImgOverlay>

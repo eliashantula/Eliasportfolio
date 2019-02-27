@@ -205,6 +205,8 @@ p {
   flex: 0 0 100% !important;
   flex-flow: row nowrap !important;
   justify-content: center !important;
+  color: black;
+  border-radius: 10px 20px;
   
 
 }
@@ -219,7 +221,7 @@ p {
   }
 
   .welcome {
-    margin-top: 20px !important;
+    margin-top: 30px !important;
     font-size: 25px !important;
     font-weight: 400 !important;
   }
@@ -227,13 +229,15 @@ p {
 }
 
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 500px) {
 
   .fontTest {
-    padding-top: 75px !important;
+    padding-top: 90px !important;
     font-size: 20px !important;
-    flex: 0 0 60 !important;
+    flex: 0 0 40% !important;
     font-weight: 300 !important;
+    
+
 
   }
   .welcome {
