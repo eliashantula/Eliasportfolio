@@ -211,12 +211,12 @@ p {
 
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 500px){
 .fontTest {
 
-    font-size: 13px !important;
-    flex: 0 0 100%;
-    font-weight: 300 !important;
+    font-size: 16px !important;
+    flex: 0 0 100% !important;
+    font-weight: 600 !important;
 
   }
 
@@ -235,7 +235,7 @@ p {
     padding-top: 90px !important;
     font-size: 20px !important;
     flex: 0 0 40% !important;
-    font-weight: 300 !important;
+    font-weight: 600 !important;
     
 
 

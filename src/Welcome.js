@@ -14,7 +14,7 @@ const Welcome = (props) => {
 <div className="restrict">
     <CardText className="my-1 fontTest"><Typing speed={60}>
    Thanks for coming by! I am an attorney turned full stack software developer with a passion for technology, learning,
-   the arts, and intellectual property. My expertise includes working with a wide ranging entities including mom and pop businesses, craft breweries and celebrities. I am always eager to work on projects which promote and stimulate creativity, knowledge and enhanced life experiences. 
+   the arts, and intellectual property. My expertise includes assisting diverse entities including mom and pop businesses, craft breweries and celebrities. I am always eager to work on projects which promote and stimulate creativity, knowledge and enhanced life experiences. 
   </Typing></CardText>
 </div>
 </CardImgOverlay>
