@@ -1,1 +1,1 @@
-Website to view my project journey.
+Portfolio of development journey.
