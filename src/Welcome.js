@@ -1,16 +1,30 @@
-import React, {Component} from "react";
-import Mailto from 'react-protected-mailto'
+import React from "react";
+
 import { Parallax, Background } from 'react-parallax'
-const Welcome = () => {
-  return <div className="container1" style={{background: "-webkit-radial-gradient(center, ellipse cover, #383838 0%, #C3C8D6 91%, #C3C8D6 92%)", marginTop: "0px", paddingTop: "25px", paddingBottom: "25px"}}>
-  <h1 className="desc4" style={{color:"black", margin: "0px", paddingTop: "30px",paddingBottom: "20px"}}>Welcome</h1>
-   <blockquote><p align="center" className="desc" style={{color:"black", wordWrap: "breakWord", marginTop: "50px"}}>Thank you for visiting. 
-   I am an attorney turned full stack software developer with a passion for technology,
-   the arts, and the law. I love working on projects which promote and stimulate creativity, knowledge and enhanced life experiences. To that end some of my contributions include securing intellectual 
-   property protection for mom and pop restaurants, craft breweries and internet startups. I welcome the opportunity to work on and advance projects through my software engineering
-   expertise as well as my legal knowledge. 
-  </p></blockquote>
+
+import { Jumbotron, Button, Container, Card, CardTitle, CardText, CardImg, CardImgOverlay} from 'reactstrap';
+const Welcome = (props) => {
+
+  return <div className="container1" style={{marginTop: "0px", paddingTop: "30px", paddingBottom: "30px"}}>
+  <Jumbotron className="alter" fluid>
+  <Container fluid>
+  <Card inverse>
+  <CardImgOverlay>
+  <CardTitle className="display-3 welcome" style={{color:"black", margin: "0px", paddingTop: "30px",paddingBottom: "30px"}}>Welcome</CardTitle>
+<div className="restrict">
+    <CardText className="my-1 fontTest">
+   Thanks for coming by! 
+   I am an attorney turned full stack software developer with a passion for technology, learning,
+   the arts, and the law. My expertise with entities ranging from mom and pop restaurants, craft breweries to celebrities. I am always seeking out projects which promote and stimulate creativity, knowledge and enhanced life experiences. 
+  </CardText>
+</div>
+</CardImgOverlay>
+</Card>
+  </Container>
+  </Jumbotron>
+
   </div>
+  
 }
 
 export default Welcome;

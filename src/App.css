@@ -47,26 +47,25 @@ font-size: 25px;
 .desc4 {
 
 
-    font-size: 40px;
-    color: #e0dfdc;
+    
   
-    letter-spacing: .5em;
+    letter-spacing: .2em;
     text-shadow: 
       0 -1px 0 #fff, 
       0 1px 0 #2e2e2e, 
       0 1px 0 #2c2c2c, 
-      0 3px 0 #2a2a2a, 
+      0 2px 0 #2a2a2a, 
       0 4px 0 #282828, 
       0 0px 0 #262626, 
       0 0px 0 #242424, 
       0 0px 0 #222, 
-      0 2px 0 #202020, 
+      0 1px 0 #202020, 
       0 0px 0 #1e1e1e, 
       0 1px 0 #1c1c1c, 
       0 1px 0 #1a1a1a, 
       0 0px 0 #181818, 
-      0 4px 0 #161616, 
-      0 0px 0 #141414, 
+      0 2px 0 #161616, 
+      0 1px 0 #141414, 
       0 0px 0 #121212, 
       0 0px 0px rgba(0, 0, 0, 0.9);
   
@@ -90,10 +89,21 @@ blockquote {
 }
 
 
+.alter {
+  background: transparent !important;
+}
 
+.testing1 {
+  background-image: url('./back5.jpg');
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  height: 55px;
+padding-top:0em;
+width: 100%;
 
-.nav {
-  background-image: url('./back4.jpg');
 }
 
 
@@ -130,16 +140,105 @@ section {
 margin-top: 0px;
 padding: 0px;
 margin: 0px;
+}
+
+.alter {
+margin: 0px !important;
+padding: 0px !important;
 
 
-    
+
+} 
+
+.lead {
+  font-weight: 300 !important;
+  color: black !important;
+}   
+
+.test {
+margin: 0px !important;
 
 
 }
 
+.container1 {
+  
+  background-image: url('./comp12.jpg');
+ background-color: transparent !important;
+  background-size: cover;
+height: 950px;
+  
+width: 100%;
 
+}
 
+.fontTest {
+  flex: 0 0 60% !important;
+  font-weight: 300 !important;
+  color: white !important;
+}
 
+.my-modal {
+  max-width: 100% !important;
+  width: 0vw !important;
+  padding-top: 0px;
+  max-height: 100% !important;
+  height: 10vw !important;
+  margin: 0px !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+}
 p {
   padding-top: 5px;
 }
+
+.navbar {
+
+}
+.anotherTest {
+  background-image: url('./back5.jpg');
+  background-size: cover;
+}
+
+.restrict {
+  display: flex !important;
+  flex: 0 0 100% !important;
+  flex-flow: row nowrap !important;
+  justify-content: center;
+  
+
+}
+
+@media only screen and (max-width: 300px){
+.fontTest {
+
+    font-size: 13px !important;
+    flex: 0 0 100%;
+    font-weight: 300 !important;
+
+  }
+
+  .welcome {
+    margin-top: 20px !important;
+    font-size: 25px !important;
+  }
+
+}
+
+
+@media only screen and (min-width: 300px) {
+
+  .fontTest {
+
+    font-size: 20px !important;
+    flex: 0 0 100%;
+    font-weight: 300 !important;
+
+  }
+  .welcome {
+    font-size: 30px !important;
+
+  }
+}
+
+

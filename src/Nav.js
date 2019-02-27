@@ -1,51 +1,81 @@
-import React, {Component} from 'react';
-import Scales from './scales.png'
-import { Parallax, Background } from 'react-parallax'
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import React, { Component } from "react";
+import Scales from "./scales.png";
 
 
-const Navbars = ({sections, colorStyle}) => {
-  return (
-    <div>
-<Navbar fixedTop inverse collapseOnSelect className="nav">
+import Resumes from "./resume.pdf";
+import ResModal from "./resmodal.js";
+import { Parallax, Background } from "react-parallax";
 
-  <Navbar.Header className="head" style={{float: "left"}}>
+import {
+    Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
 
-    <Navbar.Brand className="desc2" style={{paddingRight: "200px", fontSize: "30px", color: "white", fontFamily: "Lato, sans-serif"}}>
+class Navbars extends Component {
+  constructor(props) {
+    super(props);
 
-      Elias Hantula
-    
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.state = {
+      collapsed: true
+    };
+  }
+  toggleNavbar() {
+    this.setState({
+      isOpen: !this.state.collapsed
+    });
+  }
 
-    </Navbar.Brand>
-
-    <Navbar.Toggle />
-  </Navbar.Header>
-  <Navbar.Collapse>
-    <Nav style={{fontSize: "15px"}}>
-
-      <NavItem eventKey={1} href="#Welcome" style={{fontSize: "15px", padding: "0px"}}>
-        Welcome
-      </NavItem>
-      <NavItem eventKey={2} href="#Projects">
-        Projects
-      </NavItem>
-      </Nav>
-      <Nav style={{fontSize: "15px", padding: "0px"}}>
-        <NavItem eventKey={3} href="#Skills">
-        Skills
-      </NavItem>
+  render() {
+    return (
+        
+         <div className="testing1">
+        
+          <Nav fixed={'top'} tabs horizontal>
+        <NavbarBrand className="desc4" style={{ fontSize: "30px", color: "white", float: "left"}}href="/">Elias Hantula</NavbarBrand>
+        
+         
+         
       
-        <NavItem eventKey={4} href="#Contact">
-        Contact
-      </NavItem>
-   
-    </Nav>
-   
-  </Navbar.Collapse>
-</Navbar>
-     </div>
- 
-  );
-};
+       
+     
+        <NavItem>
+          <NavLink style={{ fontSize: "15px", color: "black", }} href="#Projects">
+            Projects
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink style={{ fontSize: "15px", color: "black" }} href="#Skills">
+            Skills
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink style={{ fontSize: "15px", color: "black" }} href="#">
+            <ResModal />
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink style={{ fontSize: "15px", color: "black" }} href="#Contact">
+            Contact
+          </NavLink>
+        </NavItem>
 
+      
+
+
+       </Nav>
+       </div>
+       
+    );
+  }
+}
 export default Navbars;

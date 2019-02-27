@@ -8,54 +8,73 @@ import CSS from './csss.svg';
 import PSQL from './post.png';
 import REACT from './react.png';
 import MONGTO from './mongob.png';
+import REL from './relativity.png';
+import Reveal from 'react-reveal/Reveal';
+import { Container, Row, Col, Jumbotron } from 'reactstrap';
+import Fade from 'react-reveal/Fade';
 const Skills = () => {
-  return <div className="container-fluid" style ={{background: "-webkit-radial-gradient(center, ellipse cover, #383838 0%, #C3C8D6 91%, #C3C8D6 92%)", margin: "0px", border: "0px solid black", paddingTop: "40px", paddingBottom: "-10px"}}>
-  <h1 className="desc4" style={{color:"black", margin: "0px", paddingTop: "20px", paddingBottom: "30px"}}>Skills</h1>
-<div className="row" style={{paddingBottom: "0", margin: "0px", paddingTop: "30px"}}>
+
+  return <div className="container2" style={{background: "-webkit-radial-gradient( cover, white 0%, white 100%)", marginTop: "0px", paddingTop: "30px", paddingBottom: "30px"}}>
+  <Jumbotron className="alter" fluid>
+  <Container fluid>
+  <h1 className="display-3" style={{color:"black", margin: "0px", paddingTop: "25px", paddingBottom: "25px"}}>Skills</h1>
+  <hr className="my-2"/>
+ <Fade top>
+<Row style={{paddingBottom: "0px", margin: "0px", paddingTop: "20px"}}>
    
-<div className="col-md-4" style={{marginTop:"0px"}}>
 
 
-<img src={REACT} style={{width:"30%", paddingTop: "20px", marginBottom: "0px"}} />
+<Col>
+<img src={CSS} style={{width: "50%", marginTop: "0px"}}/>
 
-</div>
-<div className="col-md-4">
+</Col>
+<Col>
 
-<img src={Javascript} />
+<img src={Javascript} style={{width: "50%"}} />
 
-</div>
+</Col>
 
-<div className="col-md-4">
+<Col>
 
 <img src={HTML} style={{width: "50%", padding: "0px"}} />
 
 
-</div>
-<div className="col-md-4">
+</Col>
+<Col>
+<img src={REACT} style={{width:"50%", paddingTop: "0px", marginBottom: "0px"}} />
+</Col>
+</Row>
+
+<Row style={{ paddingTop: "20px"}}>
+<Col style={{marginTop:"0px"}}>
+  
+
 
 <img src={MONGTO} />
 
-</div>
-<div className="col-md-4">
+</Col>
+<Col>
+<img src={REL} style={{paddingTop: "40px", width: "80%"}}/>
+
+</Col>
+<Col>
 
 <img src={PSQL} />
 
-</div>
-
-<div className="col-md-4">
-<img src={CSS} style={{width: "40%", marginTop: "30px"}}/>
-
-</div>
-<div className="col-md-12">
+</Col>
 
 
-<img src={Scales} style={{width: "30%"}} />
+<Col>
 
-</div>
-</div>
-</div>
 
- 
+<img src={Scales} style={{width: "80%"}} />
+
+</Col>
+</Row>
+</Fade>
+</Container>
+</Jumbotron>
+ </div>
 }
 
 
