@@ -14,12 +14,12 @@ return (
 
 
 <div className="projects">         
-<Jumbotron className="alter" fluid style={{paddingTop: "0px, marginBottom: 0px"}}>      
-<Container fluid style ={{background: "-webkit-radial-gradient(ellipse, red 0%, orange 100%)", margin: "0px", border: "0px solid black", paddingTop: "30px", paddingBottom: "30px"}}>
+<Jumbotron className="alter projects1" fluid style={{paddingTop: "0px", marginBottom: "0px"}}>      
+<Container fluid style ={{background: "-webkit-radial-gradient(ellipse, red 0%, orange 100%)", margin: "0px", border: "0px solid black"}}>
         <Parallax blur={0}  strength={800}>
         
 
-       <h1 className="display-3" style={{color:"black", margin: "0px", paddingTop: "30px", paddingBottom: "20px"}}>Projects</h1>
+       <h1 className="display-3" style={{color:"black", margin: "0px", paddingTop: "50px", paddingBottom: "50px"}}>Projects</h1>
        <hr className="my-2"/>
 
 </Parallax>

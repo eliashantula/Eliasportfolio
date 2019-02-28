@@ -60,7 +60,7 @@ class App extends Component {
       
         
 
-        <div className="parts">
+        <div className="parts" style={{marginTop: "0px"}}>
           {sections.map((section, i) => {
 
             return <Section id={section.title} child={section.content} key={i} />;

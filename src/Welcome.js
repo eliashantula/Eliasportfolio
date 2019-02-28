@@ -5,16 +5,16 @@ import { Parallax, Background } from 'react-parallax'
 import { Jumbotron, Button, Container, Card, CardTitle, CardText, CardImg, CardImgOverlay} from 'reactstrap';
 const Welcome = (props) => {
 
-  return <div className="container1" style={{marginTop: "0px", paddingTop: "30px", paddingBottom: "30px"}}>
-  <Jumbotron className="alter" fluid>
+  return (
+  <div className="container1">
+  <Jumbotron className="alter welcome" fluid>
   <Container fluid>
   <Card inverse>
   <CardImgOverlay>
-  <CardTitle className="display-3 welcome" style={{color:"black", margin: "0px", paddingTop: "30px",paddingBottom: "30px"}}>Welcome</CardTitle>
 <div className="restrict">
-    <CardText className="my-1 fontTest"><Typing speed={60}>
-   Thanks for coming by! I am an attorney turned full stack software developer with a passion for technology, learning,
-   the arts, and intellectual property. My expertise includes assisting diverse entities including mom and pop businesses, craft breweries and celebrities. I am always eager to work on projects which promote and stimulate creativity, knowledge and enhanced life experiences. 
+    <CardText className="my-1 fontTest"><Typing speed={55}>
+   Thanks for visiting! I am an attorney turned developer with a passion for technology, learning,
+   the arts, and intellectual property. I am experienced working with diverse entities such as small businesses, craft breweries and celebrities and am always eager to develop innovative solutions which enhance life experiences. 
   </Typing></CardText>
 </div>
 </CardImgOverlay>
@@ -23,7 +23,7 @@ const Welcome = (props) => {
   </Jumbotron>
 
   </div>
-  
+  )
 }
 
 export default Welcome;

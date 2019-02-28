@@ -1,3 +1,10 @@
+
+* {
+
+  box-sizing: border-box;
+}
+
+
 .App {
   text-align: center;
   height: 100%;
@@ -89,8 +96,9 @@ blockquote {
 }
 
 
-.alter {
+.projects {
   background: transparent !important;
+  flex: 0 0 50% !important;
 }
 
 .testing1 {
@@ -137,14 +145,18 @@ padding: 15px;
 
 
 section {
-margin-top: 0px;
+/*margin-top: 0px;
 padding: 0px;
-margin: 0px;
+margin: 0px;*/
 }
 
-.alter {
-margin: 0px !important;
+.welcome {
+flex: 0 0 100%;
 padding: 0px !important;
+background-size: cover;
+background-image: url("./comp12.jpg"); 
+
+
 
 
 
@@ -161,14 +173,42 @@ margin: 0px !important;
 
 }
 
+.alter {
+  padding: 0px !important;
+  margin: 0px !important;
+}
 .container1 {
+
+  display: flex !important;
+  flex: 0 0 100% !important;
+  flex-flow: row nowrap !important;
   
-  background-image: url('./comp12.jpg');
- background-color: transparent !important;
-  background-size: cover;
-height: 950px;
+ /*background-color: transparent !important;*/
+ align-content: center;
+ 
   
-width: 100%;
+
+
+}
+
+.container2 {
+ 
+  display: flex !important;
+  flex: 0 0 70% !important;
+  flex-flow: row nowrap !important;
+  
+  
+
+
+}
+.container3 {
+
+  display: flex !important;
+  flex: 0 0 100% !important;
+  flex-flow: row nowrap !important;
+  
+  
+
 
 }
 
@@ -192,59 +232,106 @@ p {
   padding-top: 5px;
 }
 
-.navbar {
-
+.navigate {
+margin: 0px;
+padding: 0px;
+height: 100%;
+display: flex;
+flex: 0 0 100%;
+flex-flow: row nowrap;
 }
 .anotherTest {
   background-image: url('./back5.jpg');
   background-size: cover;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border: 0px;
 }
 
 .restrict {
   display: flex !important;
   flex: 0 0 100% !important;
   flex-flow: row nowrap !important;
-  justify-content: center !important;
+  align-items: center !important;
   color: black;
   border-radius: 10px 20px;
   
 
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 662px){
 .fontTest {
-
-    font-size: 16px !important;
-    flex: 0 0 100% !important;
-    font-weight: 600 !important;
+    padding-top: 60px;
+    font-size: 10px !important;
+    flex: 0 0 61% !important;
+    font-weight: 400 !important;
 
   }
 
   .welcome {
-    margin-top: 30px !important;
-    font-size: 25px !important;
-    font-weight: 400 !important;
-  }
+    margin-top: -5px !important;
+    height: 300px;
 
+    background-image: url("./comp12.jpg") ;
+    background-size: cover
+  }
+.restrict {
+  justify-content: center;
+}
 }
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 662px) {
 
   .fontTest {
-    padding-top: 90px !important;
-    font-size: 20px !important;
-    flex: 0 0 40% !important;
-    font-weight: 600 !important;
+    padding-top: 130px !important;
+  
+    font-size: 18px !important;
+    flex: 0 0 59% !important;
+    font-weight: 200 !important;
     
 
 
   }
   .welcome {
-    font-size: 40px !important;
-    font-weight: 400 !important;
+    height: 600px;
+    margin-top: -5px !important;
+    
+
+    
+    
+    
 
   }
+  .restrict {
+      justify-content: center !important;
+  }
 }
+@media only screen and (min-width: 1000px) {
+ .restrict {
+      justify-content: center !important;}
 
+
+
+
+  .fontTest {
+    padding-top: 220px !important;
+    font-size: 22px !important;
+    flex: 0 0 50% !important;
+    font-weight: 150 !important;
+
+    
+
+
+  }
+  .welcome {
+    height: 870px;
+    margin-top: -5px !important;
+    
+   
+    
+    
+
+  }
+   }
 

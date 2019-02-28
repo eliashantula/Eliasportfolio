@@ -14,10 +14,10 @@ import { Container, Row, Col, Jumbotron } from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 const Skills = () => {
 
-  return <div className="container2" style={{background: "-webkit-radial-gradient( cover, white 0%, white 100%)", marginTop: "0px", paddingTop: "30px", paddingBottom: "30px"}}>
-  <Jumbotron className="alter" fluid>
+  return <div className="container2" style={{background: "-webkit-radial-gradient( cover, white 0%, white 100%)", marginTop: "0px"}}>
+  <Jumbotron className="alter skills" fluid>
   <Container fluid>
-  <h1 className="display-3" style={{color:"black", margin: "0px", paddingTop: "25px", paddingBottom: "25px"}}>Skills</h1>
+  <h1 className="display-3" style={{color:"black", margin: "0px", paddingTop: "50px", paddingBottom: "50px"}}>Skills</h1>
   <hr className="my-2"/>
  <Fade top>
 <Row style={{paddingBottom: "0px", margin: "0px", paddingTop: "20px"}}>

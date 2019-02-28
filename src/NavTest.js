@@ -35,8 +35,8 @@ export default class Example extends React.Component {
 
   render() {
     return (
-     	<div>
-        <Navbar className="anotherTest" fixed={'top'} expand="sm" light  >
+     
+        <Navbar className="anotherTest" sticky={'top'} expand="sm" light  >
           <NavbarBrand className="desc4 mr-auto" style={{ fontSize: "25px", color: "white"}}href="/">Elias Hantula</NavbarBrand>
           <NavbarToggler onClick={this.toggle}/>
           <Collapse isOpen={this.state.isOpen}  onClick={this.toggle} navbar>
@@ -69,7 +69,7 @@ export default class Example extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-    </div>
+   
     );
   }
 }

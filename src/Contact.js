@@ -25,20 +25,20 @@ const Contact = props => {
         color: "black",
         background:
           "-webkit-radial-gradient(center, ellipse cover, #383838 0%, #C3C8D6 0%, #C3C8D6 92%)",
-        marginTop: "0px",
-        paddingTop: "30px",
-        paddingBottom: "30px",
+        
+       
         border: "2px solid black"
       }}
     >
       <div>
         <h1
-          className="display-3"
+          className="jumbotron display-3"
           style={{
             color: "black",
             margin: "0px",
-            paddingTop: "25px",
-            paddingBottom: "25px"
+            paddingTop: "50px",
+            paddingBottom: "50px",
+
           }}
         >
           Contact
