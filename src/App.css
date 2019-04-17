@@ -1,18 +1,12 @@
-
 * {
-
   box-sizing: border-box;
 }
-
 
 .App {
   text-align: center;
   height: 100%;
   margin: 0px;
-
 }
-
-
 
 .App-header {
   background-color: #222;
@@ -25,195 +19,192 @@
   font-size: 2.5em;
 }
 
-
-
 #root {
- 
   height: 100%;
   margin: 0px;
 }
 
 .desc {
-font-family: 'Lato', sans-serif;
-font-size: 25px;
-
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
 }
 
 .desc1 {
-font-family: 'Lato', sans-serif;
-font-size: 15px;
-
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
 }
 
 .desc3 {
-font-family: 'Lato', sans-serif;
-font-size: 25px;
-
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
 }
 
 .desc4 {
-
-
-    
-  
-    letter-spacing: .2em;
-    text-shadow: 
-      0 -1px 0 #fff, 
-      0 1px 0 #2e2e2e, 
-      0 1px 0 #2c2c2c, 
-      0 2px 0 #2a2a2a, 
-      0 4px 0 #282828, 
-      0 0px 0 #262626, 
-      0 0px 0 #242424, 
-      0 0px 0 #222, 
-      0 1px 0 #202020, 
-      0 0px 0 #1e1e1e, 
-      0 1px 0 #1c1c1c, 
-      0 1px 0 #1a1a1a, 
-      0 0px 0 #181818, 
-      0 2px 0 #161616, 
-      0 1px 0 #141414, 
-      0 0px 0 #121212, 
-      0 0px 0px rgba(0, 0, 0, 0.9);
-  
-      
-  
-
- 
-  
-
+  letter-spacing: 0.2em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 1px 0 #2c2c2c, 0 2px 0 #2a2a2a,
+    0 4px 0 #282828, 0 0px 0 #262626, 0 0px 0 #242424, 0 0px 0 #222,
+    0 1px 0 #202020, 0 0px 0 #1e1e1e, 0 1px 0 #1c1c1c, 0 1px 0 #1a1a1a,
+    0 0px 0 #181818, 0 2px 0 #161616, 0 1px 0 #141414, 0 0px 0 #121212,
+    0 0px 0px rgba(0, 0, 0, 0.9);
 }
-
 
 section {
-
-  color:green
+  color: green;
 }
-
 
 blockquote {
-    border-left: none;
+
+  border-left: none;
 }
 
+.project {
+  display: flex;
+  background: transparent !important;
+  flex-flow: row wrap !important;
+  flex: 0 0 100% !important;
+  justify-content: flex end !important;
+
+}
 
 .projects {
-  background: transparent !important;
-  flex: 0 0 50% !important;
+  display: flex;
+  flex: 0 0 100% !important;
+  flex-flow: row wrap !important;
+
+  justify-content:center;
+  
 }
 
+.projects1 {
+  display: flex;
+  background: transparent !important;
+  flex: row nowrap;
+  flex: 0 0 100% !important;
+}
+
+.projects3 {
+  display: flex;
+  flex: 0 0 100% !important;
+  flex: row wrap !important;
+  justify-content: center;
+}
+
+.projects4 {
+  display: flex;
+    flex: 0 80% !important;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 5px;
+  
+
+
+
+
+
+}
+
+.homepageImage{
+  flex: 0 0 100%;
+}
+
+.github-button {
+  flex: 0 0 20%;
+}
+
+.projectheader {
+  flex: 0 0 100%;
+}
+.description {
+  flex: 0 0 70%;
+}
 .testing1 {
-  background-image: url('./back5.jpg');
+  background-image: url("./back5.jpg");
   background-size: cover;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 999;
   height: 55px;
-padding-top:0em;
-width: 100%;
-
+  padding-top: 0em;
+  width: 100%;
 }
 
+.display-3 {
 
-li{
+  flex: 0 0 100%;
+}
+li {
   margin-right: 0px;
- 
 }
 
 img {
   margin-top: 0px;
   padding-bottom: 0px;
-  height: 75%;
-  width: 75%;
-
-
+  height: 100%;
+  width: 100%;
 }
 
 .mPlayer {
-
-height: 575px;
-
+  height: 575px;
 }
 
 .col-md-6 {
-
-
-padding: 15px;
-
-  
+  padding: 15px;
 }
 
-
 section {
-/*margin-top: 0px;
+  /*margin-top: 0px;
 padding: 0px;
 margin: 0px;*/
 }
 
 .welcome {
-flex: 0 0 100%;
-padding: 0px !important;
-background-size: cover;
-background-image: url("./comp12.jpg"); 
-
-
-
-
-
-} 
+  flex: 0 0 100%;
+  padding: 0px !important;
+  background-size: cover;
+  background-image: url("./comp12.jpg");
+}
 
 .lead {
   font-weight: 300 !important;
   color: black !important;
-}   
+}
 
 .test {
-margin: 0px !important;
-
-
+  margin: 0px !important;
 }
 
 .alter {
   padding: 0px !important;
   margin: 0px !important;
 }
-.container1 {
 
+.container {
+  max-width: 100% !important;
+}
+
+.container1 {
   display: flex !important;
   flex: 0 0 100% !important;
   flex-flow: row nowrap !important;
-  
- /*background-color: transparent !important;*/
- align-content: center;
- 
-  
 
-
+  /*background-color: transparent !important;*/
+  align-content: center;
 }
 
 .container2 {
- 
   display: flex !important;
   flex: 0 0 70% !important;
   flex-flow: row nowrap !important;
-  
-  
-
-
 }
 .container3 {
-
   display: flex !important;
   flex: 0 0 100% !important;
   flex-flow: row nowrap !important;
-  
-  
-
-
 }
 
 .fontTest {
-  flex: 0 0 60% !important;
+  flex: 0 0 40% !important;
   font-weight: 300 !important;
   color: white !important;
 }
@@ -233,15 +224,15 @@ p {
 }
 
 .navigate {
-margin: 0px;
-padding: 0px;
-height: 100%;
-display: flex;
-flex: 0 0 100%;
-flex-flow: row nowrap;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  display: flex;
+  flex: 0 0 100%;
+  flex-flow: row nowrap;
 }
 .anotherTest {
-  background-image: url('./back5.jpg');
+  background-image: url("./back5.jpg");
   background-size: cover;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -250,88 +241,79 @@ flex-flow: row nowrap;
 
 .restrict {
   display: flex !important;
-  flex: 0 0 100% !important;
-  flex-flow: row nowrap !important;
+  flex: 0 0 80% !important;
+  flex-flow: row wrap !important;
   align-items: center !important;
   color: black;
-  border-radius: 10px 20px;
-  
-
+  border-radius: 40px 20px;
 }
 
-@media only screen and (max-width: 662px){
-.fontTest {
+@media only screen and (max-width: 300px) {
+  .fontTest {
     padding-top: 60px;
     font-size: 10px !important;
-    flex: 0 0 61% !important;
+    flex: 0 0 51% !important;
     font-weight: 400 !important;
-
   }
 
   .welcome {
     margin-top: -5px !important;
     height: 300px;
 
-    background-image: url("./comp12.jpg") ;
-    background-size: cover
+    background-image: url("./comp12.jpg");
+    background-size: cover;
   }
-.restrict {
-  justify-content: center;
+  .restrict {
+    justify-content: center;
+  }
 }
-}
 
-
-@media only screen and (min-width: 662px) {
-
+@media only screen and (min-width: 300px) {
   .fontTest {
     padding-top: 130px !important;
-  
-    font-size: 18px !important;
-    flex: 0 0 59% !important;
+
+    font-size: 15px !important;
+    flex: 0 0 50% !important;
     font-weight: 200 !important;
-    
-
-
   }
   .welcome {
     height: 600px;
     margin-top: -5px !important;
-    
-
-    
-    
-    
-
   }
   .restrict {
-      justify-content: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (min-width: 662px) {
+  .fontTest {
+    padding-top: 130px !important;
+
+    font-size: 18px !important;
+    flex: 0 0 40% !important;
+    font-weight: 200 !important;
+  }
+  .welcome {
+    height: 600px;
+    margin-top: -5px !important;
+  }
+  .restrict {
+    justify-content: center !important;
   }
 }
 @media only screen and (min-width: 1000px) {
- .restrict {
-      justify-content: center !important;}
-
-
-
+  .restrict {
+    justify-content: center !important;
+  }
 
   .fontTest {
     padding-top: 220px !important;
     font-size: 22px !important;
-    flex: 0 0 50% !important;
+    flex: 0 0 40% !important;
     font-weight: 150 !important;
-
-    
-
-
   }
   .welcome {
     height: 870px;
     margin-top: -5px !important;
-    
-   
-    
-    
-
   }
-   }
-
+}

@@ -27,7 +27,7 @@ const Contact = props => {
           "-webkit-radial-gradient(center, ellipse cover, #383838 0%, #C3C8D6 0%, #C3C8D6 92%)",
         
        
-        border: "2px solid black"
+        border: "1px solid black"
       }}
     >
       <div>
@@ -35,9 +35,9 @@ const Contact = props => {
           className="jumbotron display-3"
           style={{
             color: "black",
-            margin: "0px",
-            paddingTop: "50px",
-            paddingBottom: "50px",
+            marginTop: "10px",
+            paddingTop: "20px",
+            paddingBottom: "20px",
 
           }}
         >
