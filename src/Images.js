@@ -25,7 +25,8 @@ const Images = () => {
 					color: "black",
 					margin: "0px",
 					paddingTop: "50px",
-					paddingBottom: "50px"
+					paddingBottom: "50px",
+					fontWeight: "900"
 				}}
 			>
 				Projects
@@ -43,15 +44,8 @@ const Images = () => {
 						<img  src={sales} />
 					</a>
 
-					<blockquote className="description">
-						<p
-							className="lead"
-							style={{
-								color: "black",
-								paddingTop: "5px",
-								paddingBottom: "5px"
-							}}
-						>
+					<p className="description">
+						
 							<cite>Sales-Finder:</cite> Web application enabling
 							user to generate economical shopping lists based on
 							local sale items and search recipes utilizing the
@@ -61,7 +55,7 @@ const Images = () => {
 							version of the app will incorporate geographically
 							sourced sales data.
 						</p>
-					</blockquote>
+					
 
 					<a
 						style={{ paddingTop: "0px" }}
@@ -85,22 +79,15 @@ const Images = () => {
 						<img src={backpack} />
 					</a>
 
-					<blockquote className="description">
-						<p
-							className="lead description"
-							style={{
-								color: "black",
-								paddingTop: "5px",
-								paddingBottom: "5px"
-							}}
-						>
+					<p className="description">
+						
 							<cite>Backpack:</cite> Web application enabling user
 							to store links in their private accounts either
 							through the website or through a Chrome extension.
 							The application utilizes React, Redux, passport
 							authentication, and MongoDB.
-						</p>
-					</blockquote>
+						
+					</p>
 
 					<a 
 						style={{ paddingTop: "0px" }}
@@ -119,22 +106,15 @@ const Images = () => {
 						<img src={event} />
 					</a>
 
-					<blockquote className="description">
-						<p
-							className="lead"
-							style={{
-								color: "black",
-								paddingTop: "10px",
-								marginBottom: "0px"
-							}}
-						>
+					<p className="description">
+						
 							<cite>Event Guider:</cite> Web application to locate
 							attractions by zip code taking place on the current
 							day. The application utilizes data from Yelp's api
 							and Eventbrite's api. A chat feature is implemented
 							with websockets.{" "}
 						</p>
-					</blockquote>
+					
 					<a
 						style={{ padding: "20px" }}
 						className="github-button"
@@ -152,12 +132,8 @@ const Images = () => {
 						<img src={ukraine} />
 					</a>
 					<p
-						className="lead description"
-						style={{
-							color: "black",
-							paddingTop: "10px",
-							marginBottom: "0px"
-						}}
+						className=" description"
+						
 					>
 						<cite>Ukraine Travel Guide: </cite>
 						Website hilighting interesting important attractions to

@@ -38,6 +38,7 @@ const Contact = props => {
             marginTop: "10px",
             paddingTop: "20px",
             paddingBottom: "20px",
+            fontWeight: "900"
 
           }}
         >

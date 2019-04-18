@@ -87,13 +87,15 @@ blockquote {
   flex: 0 0 100% !important;
   flex: row wrap !important;
   justify-content: center;
+
 }
 
 .projects4 {
   display: flex;
-    flex: 0 80% !important;
+    flex: 0 0 65% !important;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5px;
   
 
@@ -115,7 +117,12 @@ blockquote {
   flex: 0 0 100%;
 }
 .description {
-  flex: 0 0 70%;
+  flex: 0 0 100%;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+
+
 }
 .testing1 {
   background-image: url("./back5.jpg");
@@ -159,14 +166,20 @@ margin: 0px;*/
 }
 
 .welcome {
+  display: flex;
   flex: 0 0 100%;
   padding: 0px !important;
+  background-position: 50% 50%;
   background-size: cover;
   background-image: url("./comp12.jpg");
+justify-content: center;
+  align-items: center;
+  
+  height: 100%;
 }
 
 .lead {
-  font-weight: 300 !important;
+  font-weight: 350 !important;
   color: black !important;
 }
 
@@ -194,9 +207,36 @@ margin: 0px;*/
 
 .container2 {
   display: flex !important;
-  flex: 0 0 70% !important;
-  flex-flow: row nowrap !important;
+  flex-flow: row wrap !important;
+  flex: 0 0 100% !important;
+  
+  justify-content: center;
+  align-items: center;
+
 }
+
+.icon {
+  flex: 0 0 30%;
+  
+}
+
+.skills {
+
+  flex: 0 0 100%;
+}
+
+.icons {
+
+display: flex;
+flex-flow: row wrap;
+flex: 0 0 90%;
+justify-content: center;
+align-items: center;
+
+
+
+}
+
 .container3 {
   display: flex !important;
   flex: 0 0 100% !important;
@@ -204,9 +244,10 @@ margin: 0px;*/
 }
 
 .fontTest {
-  flex: 0 0 40% !important;
+  flex: 0 0 30% !important;
   font-weight: 300 !important;
   color: white !important;
+ 
 }
 
 .my-modal {
@@ -241,79 +282,138 @@ p {
 
 .restrict {
   display: flex !important;
-  flex: 0 0 80% !important;
+  flex: 0 0 60% !important;
   flex-flow: row wrap !important;
-  align-items: center !important;
   color: black;
   border-radius: 40px 20px;
+ 
+
 }
 
-@media only screen and (max-width: 300px) {
+
+@media only screen and (max-width: 320px) {
   .fontTest {
-    padding-top: 60px;
+  
     font-size: 10px !important;
-    flex: 0 0 51% !important;
+    flex: 0 0 100% !important;
     font-weight: 400 !important;
   }
 
   .welcome {
     margin-top: -5px !important;
-    height: 300px;
-
+  
+    
     background-image: url("./comp12.jpg");
     background-size: cover;
   }
   .restrict {
-    justify-content: center;
+    justify-content: flex-end;
+    flex: 0 0 100%;
+
   }
+   .description {
+    font-size: 12px;
+    font-weight: 500;
+   }
+
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 320px) {
   .fontTest {
-    padding-top: 130px !important;
+    
+
+    font-size: 10px !important;
+    flex: 0 0 90% !important;
+    font-weight: 400 !important;
+
+  }
+  .welcome {
+    justify-content: center;
+    
+    height: 300px;
+
+  }
+  .restrict {
+    justify-content: center !important;
+    flex: 0 0 100%;
+  }
+  .description {
+    font-size: 13px;
+       font-weight: 500;
+   }
+}
+
+@media only screen and (min-width: 548px) {
+  .fontTest {
 
     font-size: 15px !important;
-    flex: 0 0 50% !important;
-    font-weight: 200 !important;
+    flex: 0 0 90% !important;
+    font-weight: 400 !important;
+    justify-content: center;
+    
   }
   .welcome {
-    height: 600px;
+     justify-content: center;
     margin-top: -5px !important;
+    height: 600px;
+
   }
   .restrict {
     justify-content: center !important;
-  }
-}
+    flex: 0 0 80%;
 
-@media only screen and (min-width: 662px) {
-  .fontTest {
-    padding-top: 130px !important;
-
-    font-size: 18px !important;
-    flex: 0 0 40% !important;
-    font-weight: 200 !important;
   }
-  .welcome {
-    height: 600px;
-    margin-top: -5px !important;
-  }
-  .restrict {
-    justify-content: center !important;
-  }
+   .description {
+    font-size: 24px;
+       font-weight: 400;
+   }
 }
 @media only screen and (min-width: 1000px) {
+  .welcome {
+
+    align-items: center;
+  }
+
   .restrict {
-    justify-content: center !important;
+   
+    
+    flex: 0 0 100%;
   }
 
   .fontTest {
-    padding-top: 220px !important;
-    font-size: 22px !important;
-    flex: 0 0 40% !important;
-    font-weight: 150 !important;
+   
+    font-size: 24px !important;
+    flex: 0 0 80% !important;
+    font-weight: 400 !important;
   }
   .welcome {
-    height: 870px;
+
     margin-top: -5px !important;
+    height: 850px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .welcome {
+
+    align-items: center;
+  }
+
+  .restrict {
+   
+    
+    flex: 0 0 100%;
+  }
+
+  .fontTest {
+   
+    font-size: 24px !important;
+    flex: 0 0 80% !important;
+    font-weight: 400 !important;
+  }
+  .welcome {
+
+    margin-top: -5px !important;
+    height: 1200px;
   }
 }
